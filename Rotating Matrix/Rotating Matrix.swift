@@ -14,12 +14,12 @@ var matrix: [[Int]] = [
 func rotate(_ matrix:[[Int]]) {
     var tempMatrix = matrix
     let matrixLength = matrix.count
-    let rotatbleLayers = matrixLength / 2
+    let rotatbleLayers = matrixLength / 2 - 1
     
     // For 0 in 0...2
     for var layer in 0...rotatbleLayers {
         let first = layer // 0
-        let last = matrixLength - first - 1 // 1 (Array indexes yay)
+        let last = matrixLength - first
         
         // For 0 in 0...4
         // For 1 in 0...4
